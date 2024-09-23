@@ -28,13 +28,13 @@
         </div>
         <div class="flex gap-3">
             <img src="B10A5-DOM-Quest-Build-and-Manipulate/assets/coin.png" alt="">
-            <button class="text-xl">1233 BDT</button>
+            <button class="text-xl"><span id="main-balance">1200</span> BDT</button>
         </div>
     </header>
 
     <div class="flex justify-center mt-14 gap-4">
-        <button class="btn bg-[#B4F461] text-xl font-bold">Donation</button>
-        <button class="btn btn-outline text-xl font-bold">History</button>
+        <button class="btn bg-[#B4F461] text-xl font-bold" id="donation-btn">Donation</button>
+        <button class="btn btn-outline text-xl font-bold" id="history-btn">History</button>
     </div>
 
     <main>
@@ -43,13 +43,13 @@
                 <img src="B10A5-DOM-Quest-Build-and-Manipulate/assets/noakhali.png" alt="Album" class="lg:ml-14 lg:w-[700px] lg:h-[400px] px-5" />
                 <div class="card-body w-[90%] space-y-4">
                     <div>
-                        <button class="flex btn gap-2"><img src="B10A5-DOM-Quest-Build-and-Manipulate/assets/coin.png" alt="">0 BDT</button>
+                        <button class="flex btn gap-2"><img src="B10A5-DOM-Quest-Build-and-Manipulate/assets/coin.png" alt=""><span id="noakhali-amount">0</span> BDT</button>
                     </div>
                     <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
                     <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                     <div class="space-y-3 lg:space-y-0">
-                        <input type="text" placeholder="Write yout donation amount" class="input input-bordered w-full max-w-xs mr-3" />
-                        <button class="btn btn-wide">Donate Now</button>
+                        <input type="text" placeholder="Write yout donation amount" class="input input-bordered w-full max-w-xs mr-3" id="donate-noakhali-input" />
+                        <button class="btn btn-wide" id="donate-noakhali-input-btn">Donate Now</button>
                     </div>
                 </div>
             </div>
@@ -89,5 +89,8 @@
     <footer>
 
     </footer>
+
+    <script src="js/home.js"></script>
+    <script src="js/utilities.js"></script>
 </body>
 </html>
