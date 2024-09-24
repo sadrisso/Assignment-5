@@ -95,6 +95,7 @@ document.getElementById("donate-quota-input-btn").addEventListener("click", func
         alert("Tk sob ses vai")
     }
 
+
     if (quotaDonateAmount > 10) {
         alert("successfully donated")
         document.getElementById("main-balance").innerText = newBalance;
@@ -116,5 +117,9 @@ document.getElementById("donate-quota-input-btn").addEventListener("click", func
 document.getElementById("blog-btn").addEventListener("click", function ()
 {
     window.location.href = "/blog.html";
+})
+
+document.getElementById("home-btn").addEventListener("click", function () {
+    window.location.href = "/index.html";
 })
 
