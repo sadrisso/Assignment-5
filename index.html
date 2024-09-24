@@ -28,7 +28,7 @@
         </div>
         <div class="flex gap-3">
             <img src="B10A5-DOM-Quest-Build-and-Manipulate/assets/coin.png" alt="">
-            <button class="text-xl"><span id="main-balance">1200</span> BDT</button>
+            <button class="text-xl"><span id="main-balance">12000</span> BDT</button>
         </div>
     </header>
 
@@ -38,8 +38,8 @@
     </div>
 
     <main>
-        <section class="mt-12 lg:container lg:mx-auto space-y-10">
-            <div class="grid grid-cols-1 lg:grid-cols-2 items-center self-center justify-center border border-gray-300 py-10 rounded-2xl">
+        <section class="mt-12 lg:container lg:mx-auto space-y-10" id="donate-section">
+            <div class="grid grid-cols-1 lg:grid-cols-2 items-center self-center justify-center border border-gray-300 py-10 rounded-2xl shadow-md">
                 <img src="B10A5-DOM-Quest-Build-and-Manipulate/assets/noakhali.png" alt="Album" class="lg:ml-14 lg:w-[700px] lg:h-[400px] px-5" />
                 <div class="card-body w-[90%] space-y-4">
                     <div>
@@ -54,22 +54,22 @@
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 items-center border border-gray-300 lg:py-10 rounded-2xl">
+            <div class="grid grid-cols-1 lg:grid-cols-2 items-center border border-gray-300 lg:py-10 rounded-2xl shadow-md">
                 <img src="B10A5-DOM-Quest-Build-and-Manipulate/assets/feni.png" alt="Album" class="lg:ml-14 lg:w-[700px] lg:h-[400px] px-5" />
                 <div class="card-body w-[90%] space-y-4">
                     <div>
-                        <button class="flex btn gap-2"><img src="B10A5-DOM-Quest-Build-and-Manipulate/assets/coin.png" alt="">0 BDT</button>
+                        <button class="flex btn gap-2"><img src="B10A5-DOM-Quest-Build-and-Manipulate/assets/coin.png" alt=""><span id="feni-amount">0</span>BDT</button>
                     </div>
                     <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
                     <p> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
                     <div class="space-y-3 lg:space-y-0">
-                        <input type="text" placeholder="Write yout donation amount" class="input input-bordered w-full max-w-xs mr-3" />
-                        <button class="btn btn-wide">Donate Now</button>
+                        <input type="text" placeholder="Write yout donation amount" class="input input-bordered w-full max-w-xs mr-3" id="donate-feni-input" />
+                        <button class="btn btn-wide" id="donate-feni-input-btn">Donate Now</button>
                     </div>
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 items-center border border-gray-300 lg:py-10 rounded-2xl">
+            <div class="grid grid-cols-1 lg:grid-cols-2 items-center border border-gray-300 lg:py-10 rounded-2xl shadow-md">
                 <img src="B10A5-DOM-Quest-Build-and-Manipulate/assets/quota-protest.png" alt="Album" class="lg:ml-14 lg:w-[700px] lg:h-[400px] px-5" />
                 <div class="card-body w-[90%] space-y-4">
                     <div>
@@ -79,11 +79,16 @@
                     <p> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
                     <div class="space-y-3 lg:space-y-0">
                         <input type="text" placeholder="Write yout donation amount" class="input input-bordered w-full max-w-xs lg:mr-3" />
-                        <button class="btn btn-wide">Donate Now</button>
+                        <button class="btn btn-wide" id="donate-quota-input-btn">Donate Now</button>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="lg:container lg:mx-auto border border-gray-300 rounded-2xl p-5 lg:p-10 mt-10 mx-5 hidden" id="history-section"></section>
+
+        </section>
+
     </main>
 
     <footer>
