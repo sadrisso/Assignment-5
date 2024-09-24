@@ -34,7 +34,7 @@
 
     <div class="flex justify-center mt-14 gap-4">
         <button class="btn bg-[#B4F461] text-xl font-bold" id="donation-btn">Donation</button>
-        <button class="btn btn-outline text-xl font-bold" id="history-btn">History</button>
+        <button class="btn text-xl font-bold" id="history-btn">History</button>
     </div>
 
     <main>
@@ -73,21 +73,20 @@
                 <img src="B10A5-DOM-Quest-Build-and-Manipulate/assets/quota-protest.png" alt="Album" class="lg:ml-14 lg:w-[700px] lg:h-[400px] px-5" />
                 <div class="card-body w-[90%] space-y-4">
                     <div>
-                        <button class="flex btn gap-2"><img src="B10A5-DOM-Quest-Build-and-Manipulate/assets/coin.png" alt="">0 BDT</button>
+                        <button class="flex btn gap-2"><img src="B10A5-DOM-Quest-Build-and-Manipulate/assets/coin.png" alt=""><span id="quota-amount">0</span> BDT</button>
                     </div>
                     <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
                     <p> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
                     <div class="space-y-3 lg:space-y-0">
-                        <input type="text" placeholder="Write yout donation amount" class="input input-bordered w-full max-w-xs lg:mr-3" />
+                        <input type="text" placeholder="Write yout donation amount" class="input input-bordered w-full max-w-xs lg:mr-3" id="donate-quota-input" />
                         <button class="btn btn-wide" id="donate-quota-input-btn">Donate Now</button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="lg:container lg:mx-auto border border-gray-300 rounded-2xl p-5 lg:p-10 mt-10 mx-5 hidden" id="history-section"></section>
+        <section class="lg:container lg:mx-auto border border-gray-300 rounded-2xl p-5 lg:p-10 mt-10 mx-5 hidden font-bold text-3xl" id="history-section"></section>
 
-        </section>
 
     </main>
 
