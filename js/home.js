@@ -111,3 +111,10 @@ document.getElementById("donate-quota-input-btn").addEventListener("click", func
     messageEl.innerText = message;
     document.getElementById("history-section").appendChild(messageEl);
 })
+
+
+document.getElementById("blog-btn").addEventListener("click", function ()
+{
+    window.location.href = "/blog.html";
+})
+
