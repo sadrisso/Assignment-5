@@ -24,13 +24,17 @@ document.getElementById("donate-noakhali-input-btn").addEventListener("click", f
     const newBalance = mainBalance - noakhaliInputVal;
     const noakhaliBalance = parseFloat(noakhaliAmonut) + parseFloat(noakhaliInputVal);
 
+    document.getElementById("modal-wrapper").classList.remove("hidden");
+    document.getElementById("modal-btn").addEventListener("click", function () {
+        document.getElementById("modal-wrapper").classList.add("hidden");
+    });
+
     if (mainBalance <= 0) {
         alert("Tk sob sesh vai");
         return;
     }
 
     if (noakhaliInputVal > 10) {
-        alert("successfully donated")
         document.getElementById("main-balance").innerText = newBalance;
         document.getElementById("noakhali-amount").innerText = noakhaliBalance;
     }
@@ -119,7 +123,8 @@ document.getElementById("blog-btn").addEventListener("click", function ()
     window.location.href = "/blog.html";
 })
 
-document.getElementById("home-btn").addEventListener("click", function () {
+document.getElementById("home-btn").addEventListener("click", function ()
+{
     window.location.href = "/index.html";
 })
 
